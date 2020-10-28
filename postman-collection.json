@@ -1,187 +1,179 @@
 {
-	"info": {
-		"_postman_id": "83663289-bc3e-469d-aa11-dc53fb404771",
-		"name": "SWE CarService",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "index",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{base_url}}/api/cars",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"cars"
-					]
-				},
-				"description": "Get all cars."
-			},
-			"response": []
-		},
-		{
-			"name": "update",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"brand\": \"brand\",\n    \"model\": \"blaa\",\n    \"color\": \"green\",\n    \"horsepower\": 190\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/api/cars/2",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"cars",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "show",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/api/cars/10",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"cars",
-						"10"
-					]
-				},
-				"description": "Show a single car per id."
-			},
-			"response": []
-		},
-		{
-			"name": "delete",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/api/cars/1",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"cars",
-						"1"
-					]
-				},
-				"description": "Delete a single car per id."
-			},
-			"response": []
-		},
-		{
-			"name": "add",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"brand\": \"VW\",\n    \"model\": \"\",\n    \"color\": \"green\",\n    \"horsepower\": 190\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/api/cars",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"cars"
-					]
-				},
-				"description": "Add a car."
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"id": "2b05af6b-0812-4818-ab92-c783811de0ff",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"id": "37526731-ca6b-4432-897c-964ac7d7f559",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"id": "394efc45-502c-4c23-8cfd-4d5a8f910bc1",
-			"key": "base_url",
-			"value": "http://localhost:8888"
-		}
-	],
-	"protocolProfileBehavior": {}
+    "info": {
+        "_postman_id": "83663289-bc3e-469d-aa11-dc53fb404771",
+        "name": "SWE CarService",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "index",
+            "request": {
+                "method": "GET",
+                "header": [{
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{base_url}}/api/cars",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "cars"
+                    ]
+                },
+                "description": "Get all cars."
+            },
+            "response": []
+        },
+        {
+            "name": "update",
+            "request": {
+                "method": "PUT",
+                "header": [{
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"brand\": \"brand\",\n    \"model\": \"blaa\",\n    \"color\": \"green\",\n    \"horsepower\": 190\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/cars/2",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "cars",
+                        "2"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "show",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/cars/10",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "cars",
+                        "10"
+                    ]
+                },
+                "description": "Show a single car per id."
+            },
+            "response": []
+        },
+        {
+            "name": "delete",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/cars/1",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "cars",
+                        "1"
+                    ]
+                },
+                "description": "Delete a single car per id."
+            },
+            "response": []
+        },
+        {
+            "name": "add",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"brand\": \"VW\",\n    \"model\": \"\",\n    \"color\": \"green\",\n    \"horsepower\": 190\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/cars",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "cars"
+                    ]
+                },
+                "description": "Add a car."
+            },
+            "response": []
+        }
+    ],
+    "event": [{
+            "listen": "prerequest",
+            "script": {
+                "id": "2b05af6b-0812-4818-ab92-c783811de0ff",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "37526731-ca6b-4432-897c-964ac7d7f559",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [{
+        "id": "394efc45-502c-4c23-8cfd-4d5a8f910bc1",
+        "key": "base_url",
+        "value": "http://localhost:8808"
+    }],
+    "protocolProfileBehavior": {}
 }
